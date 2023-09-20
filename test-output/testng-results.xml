@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-09-20T10:46:10 GMT-04:00" name="Default suite" finished-at="2023-09-20T10:46:57 GMT-04:00" duration-ms="46693">
+    <groups>
+    </groups>
+    <test started-at="2023-09-20T10:46:10 GMT-04:00" name="Default test" finished-at="2023-09-20T10:46:57 GMT-04:00" duration-ms="46693">
+      <class name="com.qa.Rediff.TestCases.LoginTest">
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:11 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:19 GMT-04:00" duration-ms="8813" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:19 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:23 GMT-04:00" duration-ms="3469" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpanda@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Selenium@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
+at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:23 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:23 GMT-04:00" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:23 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:33 GMT-04:00" duration-ms="9565" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:33 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:33 GMT-04:00" duration-ms="698" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[seleniumpanda1@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Donkey@123]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
+at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:33 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:34 GMT-04:00" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:34 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:37 GMT-04:00" duration-ms="3921" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:37 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:45 GMT-04:00" duration-ms="7529" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chowdhurygs@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Shajlee1@]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
+at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:45 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:45 GMT-04:00" duration-ms="184" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:45 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:50 GMT-04:00" duration-ms="5030" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:50 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:56 GMT-04:00" duration-ms="6100" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[homa_rahimi@rediffmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[Winter2021?]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.NullPointerException">
+            <message>
+              <![CDATA[Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
+at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:664)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:227)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:957)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:200)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:848)
+at org.testng.TestRunner.run(TestRunner.java:621)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:443)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:437)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:397)
+at org.testng.SuiteRunner.run(SuiteRunner.java:336)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1280)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1200)
+at org.testng.TestNG.runSuites(TestNG.java:1114)
+at org.testng.TestNG.run(TestNG.java:1082)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.NullPointerException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:56 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:57 GMT-04:00" duration-ms="227" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.qa.Rediff.TestCases.LoginTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
