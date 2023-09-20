@@ -24,6 +24,7 @@ public class LoginTest extends TestBase{
 	public WebDriver driver;
 	public LoginPage loginpage;
 	public LandingPage landingpage;
+	public AccountPage accountpage;
 
 
 	@BeforeMethod
@@ -38,7 +39,7 @@ public class LoginTest extends TestBase{
 		loginpage.enterUserName(email);
 		loginpage.enterPassword(password);
 		loginpage.clickOnLoginButton();
-		AccountPage accountpage = new AccountPage(driver);
+		accountpage = new AccountPage(driver);
 		Assert.assertTrue(accountpage.displayStatusLogoutLink());
 	}
 	
