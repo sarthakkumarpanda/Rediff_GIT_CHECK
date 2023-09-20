@@ -5,9 +5,9 @@
     <classes>
       <class name="com.qa.Rediff.TestCases.LoginTest">
         <methods>
+          <include name="verifyLoginWithNoCredentials"/>
           <include name="tearDown"/>
           <include name="loginSetup"/>
-          <include name="verifyLoginWithValidCredentials" invocation-numbers="0 1 2 3"/>
         </methods>
       </class> <!-- com.qa.Rediff.TestCases.LoginTest -->
     </classes>

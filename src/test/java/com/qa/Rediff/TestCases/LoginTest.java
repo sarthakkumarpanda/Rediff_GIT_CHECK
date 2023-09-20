@@ -1,7 +1,6 @@
 package com.qa.Rediff.TestCases;
 
 import org.openqa.selenium.Alert;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterMethod;
@@ -36,51 +35,34 @@ public class LoginTest extends TestBase{
 	
 	@Test(priority=1, dataProvider = "Rediff", dataProviderClass = ExcelCode.class)
 	public void verifyLoginWithValidCredentials(String email, String password) {
-		loginpage.enterUserName(email);
-		loginpage.enterPassword(password);
-		loginpage.clickOnLoginButton();
-		accountpage = new AccountPage(driver);
+		accountpage = loginpage.navigateToAccountPage(email, password);
 		Assert.assertTrue(accountpage.displayStatusLogoutLink());
 	}
 	
 	@Test(priority=2)
 	public void verifyLoginWithValidUsernameInvalidPassword() {
-		driver.findElement(By.id("login1")).sendKeys(prop.getProperty("validUsername"));
-		driver.findElement(By.id("password")).sendKeys(dataprop.getProperty("invalidPassword"));
-		driver.findElement(By.name("proceed")).click();
-		String actualWarningMessage = driver.findElement(By.xpath("//b[text() = 'Wrong username and password combination.']")).getText();
-		String expectedWarningMessage = dataprop.getProperty("wrongUsernamePasswordComboWarningMessage");
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage));
+		loginpage.navigateToAccountPage(prop.getProperty("validUsername"), dataprop.getProperty("invalidPassword"));
+		Assert.assertTrue(loginpage.retrieveErrorUserNamePasswordMessage().contains(dataprop.getProperty("wrongUsernamePasswordComboWarningMessage")));
 	}
 	
 	
 	@Test(priority=3)
 	public void verifyLoginWithInvalidUsernameValidPassword() {
-		driver.findElement(By.id("login1")).sendKeys(Utils.emailWithDateTimeStamp());
-		driver.findElement(By.id("password")).sendKeys(prop.getProperty("validPassword"));
-		driver.findElement(By.name("proceed")).click();
-		String actualWarningMessage = driver.findElement(By.xpath("//b[text() = 'Temporary Issue. Please try again later. [#5002]']")).getText();
-		String expectedWarningMessage = dataprop.getProperty("tempIssueWarningMessage");
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage));
+		loginpage.navigateToAccountPage(Utils.emailWithDateTimeStamp(), prop.getProperty("validPassword"));
+		Assert.assertTrue(loginpage.retrieveErrorMessageAmbiguous().contains(dataprop.getProperty("tempIssueWarningMessage")));
 	}
 	
 	@Test(priority=4)
 	public void verifyLoginWithInvalidCredentials() {
-		driver.findElement(By.id("login1")).sendKeys(Utils.emailWithDateTimeStamp());
-		driver.findElement(By.id("password")).sendKeys(dataprop.getProperty("invalidPassword"));
-		driver.findElement(By.name("proceed")).click();
-		String actualWarningMessage = driver.findElement(By.xpath("//b[text() = 'Temporary Issue. Please try again later. [#5002]']")).getText();
-		String expectedWarningMessage = dataprop.getProperty("tempIssueWarningMessage");
-		Assert.assertTrue(actualWarningMessage.contains(expectedWarningMessage));
+		loginpage.navigateToAccountPage(Utils.emailWithDateTimeStamp(), dataprop.getProperty("invalidPassword"));
+		Assert.assertTrue(loginpage.retrieveErrorMessageAmbiguous().contains(dataprop.getProperty("tempIssueWarningMessage")));
 	}
 	
 	@Test(priority=5)
 	public void verifyLoginWithNoCredentials() {
-		driver.findElement(By.name("proceed")).click();
+		loginpage.clickOnLoginButton();
 		Alert alert = driver.switchTo().alert();
-		String actualAlertMessage = alert.getText();
-		String expectedAlertMessage = dataprop.getProperty("alertMessage");
-		Assert.assertTrue(actualAlertMessage.equals(expectedAlertMessage));;
+		Assert.assertTrue(alert.getText().equals(dataprop.getProperty("alertMessage")));
 		alert.accept();
 		
 	}

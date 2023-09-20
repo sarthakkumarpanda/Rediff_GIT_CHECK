@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="4" passed="0" failed="4" skipped="0">
+<testng-results ignored="0" total="8" passed="4" failed="4" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-20T10:46:10 GMT-04:00" name="Default suite" finished-at="2023-09-20T10:46:57 GMT-04:00" duration-ms="46693">
+  <suite started-at="2023-09-20T19:10:44 GMT-04:00" name="Suite" finished-at="2023-09-20T19:11:48 GMT-04:00" duration-ms="63757">
     <groups>
     </groups>
-    <test started-at="2023-09-20T10:46:10 GMT-04:00" name="Default test" finished-at="2023-09-20T10:46:57 GMT-04:00" duration-ms="46693">
+    <test started-at="2023-09-20T19:10:44 GMT-04:00" name="Test" finished-at="2023-09-20T19:11:48 GMT-04:00" duration-ms="63757">
       <class name="com.qa.Rediff.TestCases.LoginTest">
-        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:11 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:19 GMT-04:00" duration-ms="8813" status="PASS">
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:10:45 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:10:51 GMT-04:00" duration-ms="6326" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSetup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:19 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:23 GMT-04:00" duration-ms="3469" status="FAIL">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:10:51 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T19:10:55 GMT-04:00" duration-ms="3659" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -31,7 +31,7 @@
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
 at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
-at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -66,15 +66,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:23 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:23 GMT-04:00" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:10:55 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:10:55 GMT-04:00" duration-ms="196" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:23 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:33 GMT-04:00" duration-ms="9565" status="PASS">
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:10:55 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:00 GMT-04:00" duration-ms="4905" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSetup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:33 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:33 GMT-04:00" duration-ms="698" status="FAIL">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:00 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T19:11:05 GMT-04:00" duration-ms="4475" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -94,7 +94,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
 at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
-at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -129,15 +129,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:33 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:34 GMT-04:00" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:05 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:05 GMT-04:00" duration-ms="192" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:34 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:37 GMT-04:00" duration-ms="3921" status="PASS">
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:05 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:10 GMT-04:00" duration-ms="4736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSetup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:37 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:45 GMT-04:00" duration-ms="7529" status="FAIL">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:10 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T19:11:16 GMT-04:00" duration-ms="5851" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -157,7 +157,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
 at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
-at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -192,15 +192,15 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:45 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:45 GMT-04:00" duration-ms="184" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:16 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:16 GMT-04:00" duration-ms="113" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:45 GMT-04:00" name="loginSetup" finished-at="2023-09-20T10:46:50 GMT-04:00" duration-ms="5030" status="PASS">
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:16 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:20 GMT-04:00" duration-ms="4809" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- loginSetup -->
-        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:50 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T10:46:56 GMT-04:00" duration-ms="6100" status="FAIL">
+        <test-method signature="verifyLoginWithValidCredentials(java.lang.String,java.lang.String)[pri:1, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:20 GMT-04:00" name="verifyLoginWithValidCredentials" data-provider="Rediff" finished-at="2023-09-20T19:11:26 GMT-04:00" duration-ms="5708" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -220,7 +220,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
             <full-stacktrace>
               <![CDATA[java.lang.NullPointerException: Cannot invoke "org.openqa.selenium.WebElement.isDisplayed()" because "this.logoutLink" is null
 at com.qa.Rediff.Pages.AccountPage.displayStatusLogoutLink(AccountPage.java:18)
-at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:41)
+at com.qa.Rediff.TestCases.LoginTest.verifyLoginWithValidCredentials(LoginTest.java:39)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -255,11 +255,59 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyLoginWithValidCredentials -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@2e8c1c9b]" started-at="2023-09-20T10:46:56 GMT-04:00" name="tearDown" finished-at="2023-09-20T10:46:57 GMT-04:00" duration-ms="227" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:26 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:26 GMT-04:00" duration-ms="133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:26 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:31 GMT-04:00" duration-ms="4768" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithValidUsernameInvalidPassword()[pri:2, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:31 GMT-04:00" name="verifyLoginWithValidUsernameInvalidPassword" finished-at="2023-09-20T19:11:32 GMT-04:00" duration-ms="645" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithValidUsernameInvalidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:32 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:32 GMT-04:00" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:32 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:37 GMT-04:00" duration-ms="4878" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithInvalidUsernameValidPassword()[pri:3, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:37 GMT-04:00" name="verifyLoginWithInvalidUsernameValidPassword" finished-at="2023-09-20T19:11:37 GMT-04:00" duration-ms="697" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidUsernameValidPassword -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:37 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:38 GMT-04:00" duration-ms="164" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:38 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:43 GMT-04:00" duration-ms="5025" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithInvalidCredentials()[pri:4, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:43 GMT-04:00" name="verifyLoginWithInvalidCredentials" finished-at="2023-09-20T19:11:43 GMT-04:00" duration-ms="630" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithInvalidCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:43 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:43 GMT-04:00" duration-ms="209" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="loginSetup()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:43 GMT-04:00" name="loginSetup" finished-at="2023-09-20T19:11:48 GMT-04:00" duration-ms="4468" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginSetup -->
+        <test-method signature="verifyLoginWithNoCredentials()[pri:5, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:48 GMT-04:00" name="verifyLoginWithNoCredentials" finished-at="2023-09-20T19:11:48 GMT-04:00" duration-ms="130" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyLoginWithNoCredentials -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.qa.Rediff.TestCases.LoginTest@11392934]" started-at="2023-09-20T19:11:48 GMT-04:00" name="tearDown" finished-at="2023-09-20T19:11:48 GMT-04:00" duration-ms="121" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.qa.Rediff.TestCases.LoginTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
 </testng-results>
